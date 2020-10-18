@@ -95,6 +95,6 @@ HIA_airport %>%
   ggplot(aes(departure_h, destination)) + 
   geom_point(aes(size = duration, color = carrier)) + facet_grid( ~ day_departure) +
   ggthemes::theme_economist() + 
-  ggtitle("HIA Flight in a Week")
+  ggtitle("Huai'an Lianshui Int. Airport (HIA) Flight in a Week by tuhulab")
 
 
