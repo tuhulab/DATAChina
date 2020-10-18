@@ -36,6 +36,6 @@ SH_COVID_import_weekly <-
 SH_COVID_df %>% group_by(week) %>% 
   summarise(week_mean = sum(import_cases))  %>% ggplot(aes(week, week_mean)) + 
   geom_bar(stat="identity") + geom_point() + geom_line()  + 
-  ggtitle("Shanghai COVID-19 Imported Cases (Weekly Cumulative)") +ggthemes::theme_economist_white()  
+  ggtitle("Shanghai COVID-19 Imported Cases (Weekly Cumulative)") + ggthemes::theme_economist_white()  + ylab("Week Sum")
 plotly::ggplotly(SH_COVID_import_weekly)
 
